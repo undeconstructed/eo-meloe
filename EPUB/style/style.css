@@ -44,7 +44,8 @@ nav a {
 
 .part {
 }
-.part > h1 {
+.part header h1 {
+  text-transform: uppercase;
   font-family: sans-serif;
   text-align: center;
   font-weight: normal;
@@ -57,6 +58,7 @@ nav a {
 }
 .chapter > h2 {
   page-break-after: avoid;
+  text-transform: uppercase;
   font-family: sans-serif;
   font-size: smaller;
   border-bottom: 1px solid black;

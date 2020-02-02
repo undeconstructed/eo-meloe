@@ -18,10 +18,10 @@
   </manifest>
   <spine>
     <itemref idref="cover" properties="page-spread-right"/>
-    <itemref idref="nav"/>
+    <itemref idref="nav" linear="no"/>
     <itemref idref="part_01" properties="page-spread-right"/>
-    <itemref idref="floor_plan"/>
-    <itemref idref="part_02"/>
-    <itemref idref="part_03"/>
+    <itemref idref="floor_plan" linear="no"/>
+    <itemref idref="part_02" properties="page-spread-right"/>
+    <itemref idref="part_03" properties="page-spread-right"/>
   </spine>
 </package>
