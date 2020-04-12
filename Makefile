@@ -1,5 +1,20 @@
-build: clean
-	zip -r meloe.epub EPUB META-INF mimetype
+file := "Murdo_en_la_Orienta_Ekspreso"
+
+all: clean epub mobi
+
+epub: $(file).epub
+
+mobi: $(file).mobi
+
+check: $(file).epub
+	epubcheck $(file).epub
+
+$(file).epub:
+	zip -r -n mimetype -X $(file).epub mimetype META-INF EPUB
+
+$(file).mobi: $(file).epub
+	kindlegen $(file).epub
 
 clean:
-	-rm meloe.epub
+	-rm $(file).epub
+	-rm $(file).mobi

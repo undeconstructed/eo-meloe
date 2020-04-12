@@ -3,8 +3,14 @@
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:identifier id="id">MurdoEnLaOrientaEkspreso</dc:identifier>
     <dc:title>Murdo en la Orienta Ekspreso</dc:title>
-    <dc:creator file-as="Christie, Agatha">Agatha Christie</dc:creator>
-    <dc:language>eo</dc:language>
+    <dc:creator id="author">Agatha Christie</dc:creator>
+    <meta refines="#author" property="file-as">Christie, Agatha</meta>
+    <meta refines="#author" scheme="marc:relators" property="role">aut</meta>
+    <dc:creator id="translator">ETULO</dc:creator>
+    <meta refines="#translator" scheme="marc:relators" property="role">trl</meta>
+    <!-- Real language=eo, which kindlegen dooesn't support -->
+    <dc:language>en</dc:language>
+    <meta property="dcterms:modified">2020-04-12T00:00:00Z</meta>
   </metadata>
   <manifest>
     <item id="cover" href="cover.xhtml" media-type="application/xhtml+xml"/>
